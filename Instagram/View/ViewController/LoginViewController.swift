@@ -93,21 +93,21 @@ class LoginViewController: UIViewController ,LoginScreen {
         leftView.addTopBorderWithColor(color: .gray, width: 1)
         rightView.addTopBorderWithColor(color: .gray, width: 1)
         
-        //forgotPasswordButton.addTarget(self, action: #selector(didTapOnLightMode), for: .touchUpInside)
-        //facebookButton.addTarget(self, action: #selector(didTapOnDarkMode), for: .touchUpInside)
+        forgotPasswordButton.addTarget(self, action: #selector(didTapOnLightMode), for: .touchUpInside)
+        facebookButton.addTarget(self, action: #selector(didTapOnDarkMode), for: .touchUpInside)
     }
     
-    /*
+    
     @objc func didTapOnDarkMode(){
-        //self.uiController = LoginDarkScreen()
-        //self.uiController.view = self
+        self.uiController = LoginDarkScreen()
+        self.uiController.view = self
     }
     @objc func didTapOnLightMode(){
-        //self.uiController = LoginLightScreen()
-       // self.uiController.view = self
+        self.uiController = LoginLightScreen()
+        self.uiController.view = self
 
     }
-    */
+    
     
 
 }
