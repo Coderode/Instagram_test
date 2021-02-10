@@ -5,13 +5,8 @@
 
 import Foundation
 import UIKit
-protocol LoginDarkModeUIContoller: class {
-    var view: LoginScreen? { get set }
-}
-class LoginDarkModeViewController: NSObject , LoginDarkModeUIContoller {
-    
-    
-    
+
+class LoginDarkScreen: NSObject , LoginUIController {
     var view: LoginScreen? = nil {
         didSet{
             guard let loginScreen = view else { return }

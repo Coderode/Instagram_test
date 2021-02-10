@@ -7,9 +7,12 @@
 
 import Foundation
 import UIKit
+
 protocol LoginUIController: class {
     var view: LoginScreen? { get set }
 }
+
+
 class LoginScreenInternal: NSObject , LoginUIController {
     var view: LoginScreen? = nil {
         didSet{
@@ -38,6 +41,4 @@ class LoginScreenInternal: NSObject , LoginUIController {
         loginScreen.loginBut.titleLabel?.textColor = .blue
     }
 }
-extension LoginScreenInternal {
-    
-}
+

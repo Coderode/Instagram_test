@@ -6,11 +6,12 @@
 //
 
 import UIKit
+
+//protocol for login screen ui
 protocol LoginScreen: UIViewController {
     var emailTextFiel: UITextField { get }
     var passwordTextField: UITextField { get }
     var loginBut: UIButton { get }
-    
     var baseViewP: UIView { get }
     var topLangButtonP: UIButton { get }
     var instaLogoP: UIImageView { get }
@@ -28,10 +29,12 @@ protocol LoginScreen: UIViewController {
     var baseScrollViewP: UIView { get }
     var superViewP: UIView{ get }
 }
+
+//login ui controller
 class LoginViewController: UIViewController ,LoginScreen {
     
     
-    
+    //implementing login screen ui properties
     var emailTextFiel: UITextField{ return emailText }
     var passwordTextField: UITextField { return passwordText }
     var loginBut: UIButton { return loginButton}
@@ -47,59 +50,40 @@ class LoginViewController: UIViewController ,LoginScreen {
     var bottomContainerViewP: UIView { return bottomContainerView }
     var bottomViewP: UIView { return bottomView }
     var signupstackP: UIStackView { return signupstack }
-    
     var signupBlueButtonP: UIButton { return signupBlueButton }
     var forgotPasswordBlueButtonP: UIButton { return forgotPasswordBlueButton }
     var baseScrollViewP: UIView { return baseScrollView }
     var superViewP: UIView{ return superView }
     
+    //IBOutlet
     @IBOutlet private weak var emailText: UITextField!
     @IBOutlet private weak var passwordText: UITextField!
     @IBOutlet private weak var loginButton: UIButton!
-    
     @IBOutlet private weak var leftView: UIView!
     @IBOutlet private weak var rightView: UIView!
-    
-    
     @IBOutlet weak var baseview: UIView!
-    
     @IBOutlet weak var topLangButton: UIButton!
-    
     @IBOutlet weak var instaLogo: UIImageView!
-    
     @IBOutlet weak var inputStack: UIStackView!
-    
     @IBOutlet weak var forgotPasswordStackView: UIStackView!
-    
     @IBOutlet weak var forgotpasswordLabel: UIButton!
-    
     @IBOutlet weak var forgotPasswordButton: UIButton!
-    
     @IBOutlet weak var orView: UIView!
-    
     @IBOutlet weak var facebookButton: UIButton!
-    
     @IBOutlet weak var bottomContainerView: UIView!
-    
     @IBOutlet weak var bottomView: UIView!
-    
-    
     @IBOutlet weak var signupstack: UIStackView!
-    
-    
     @IBOutlet weak var forgotPasswordBlueButton: UIButton!
-    
     @IBOutlet weak var signupBlueButton: UIButton!
-    
     @IBOutlet weak var baseScrollView: UIScrollView!
-    
     @IBOutlet var superView: UIView!
     
     
     
-    //    var uiController: LoginLightModeUIContoller!
-    var uiController: LoginDarkModeUIContoller!
+    //  login ui controller!
+    var uiController: LoginUIController!
     
+    //after the load of login ui screen
     override func viewDidLoad() {
         super.viewDidLoad()
         uiController.view = self
@@ -108,8 +92,22 @@ class LoginViewController: UIViewController ,LoginScreen {
         emailText.setPadding()
         leftView.addTopBorderWithColor(color: .gray, width: 1)
         rightView.addTopBorderWithColor(color: .gray, width: 1)
+        
+        //forgotPasswordButton.addTarget(self, action: #selector(didTapOnLightMode), for: .touchUpInside)
+        //facebookButton.addTarget(self, action: #selector(didTapOnDarkMode), for: .touchUpInside)
     }
+    
+    /*
+    @objc func didTapOnDarkMode(){
+        //self.uiController = LoginDarkScreen()
+        //self.uiController.view = self
+    }
+    @objc func didTapOnLightMode(){
+        //self.uiController = LoginLightScreen()
+       // self.uiController.view = self
 
+    }
+    */
     
 
 }
