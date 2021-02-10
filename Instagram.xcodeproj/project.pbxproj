@@ -13,6 +13,7 @@
 		7062019125CBD00900ADE9C2 /* RootPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062019025CBD00900ADE9C2 /* RootPageViewController.swift */; };
 		7062019725CBFC1100ADE9C2 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062019625CBFC1100ADE9C2 /* SignupViewController.swift */; };
 		7062019E25CC1F4E00ADE9C2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7062019D25CC1F4E00ADE9C2 /* LoginViewController.swift */; };
+		7064486225D3F124000C241E /* LoginLightModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064486125D3F124000C241E /* LoginLightModeViewController.swift */; };
 		98B7763364C88FE2E5C21EC9 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BE9007055CDBE79E7698E /* Pods_Instagram.framework */; };
 		F717362025D3BEF3008A3EAE /* UIView+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717361F25D3BEF3008A3EAE /* UIView+Padding.swift */; };
 		F717362325D3BF3E008A3EAE /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717362225D3BF3E008A3EAE /* UITextField+Padding.swift */; };
@@ -35,6 +36,7 @@
 		7062019025CBD00900ADE9C2 /* RootPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootPageViewController.swift; sourceTree = "<group>"; };
 		7062019625CBFC1100ADE9C2 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		7062019D25CC1F4E00ADE9C2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		7064486125D3F124000C241E /* LoginLightModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLightModeViewController.swift; sourceTree = "<group>"; };
 		F717361F25D3BEF3008A3EAE /* UIView+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Padding.swift"; sourceTree = "<group>"; };
 		F717362225D3BF3E008A3EAE /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		F717362525D3C0DD008A3EAE /* LoginScreenInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenInternal.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			children = (
 				F717362525D3C0DD008A3EAE /* LoginScreenInternal.swift */,
 				F717362825D3C119008A3EAE /* LoginScreenExternal.swift */,
+				7064486125D3F124000C241E /* LoginLightModeViewController.swift */,
 			);
 			path = UIController;
 			sourceTree = "<group>";
@@ -297,6 +300,7 @@
 				F717362025D3BEF3008A3EAE /* UIView+Padding.swift in Sources */,
 				7062019725CBFC1100ADE9C2 /* SignupViewController.swift in Sources */,
 				F717362325D3BF3E008A3EAE /* UITextField+Padding.swift in Sources */,
+				7064486225D3F124000C241E /* LoginLightModeViewController.swift in Sources */,
 				7062019E25CC1F4E00ADE9C2 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

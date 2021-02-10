@@ -12,6 +12,9 @@ protocol LoginScreen: UIViewController {
     var loginBut: UIButton { get }
 }
 class LoginViewController: UIViewController ,LoginScreen {
+    
+    
+    
     var emailTextFiel: UITextField{ return emailText }
     var passwordTextField: UITextField { return passwordText }
     var loginBut: UIButton { return loginButton}
@@ -23,11 +26,16 @@ class LoginViewController: UIViewController ,LoginScreen {
     @IBOutlet private weak var leftView: UIView!
     @IBOutlet private weak var rightView: UIView!
     
-    var uiController: LoginUIController!
+    var uiController: LoginLightModeUIContoller!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         uiController.view = self
+        bottomView.addTopBorderWithColor(color: .gray, width: 1)
+        passwordText.setPadding()
+        emailText.setPadding()
+        leftView.addTopBorderWithColor(color: .gray, width: 1)
+        rightView.addTopBorderWithColor(color: .gray, width: 1)
     }
 
     
