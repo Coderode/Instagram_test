@@ -155,9 +155,6 @@
                                                                 <integer key="value" value="5"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
-                                                        <connections>
-                                                            <action selector="didTapLoginButton:" destination="z87-15-9ED" eventType="touchUpInside" id="U9W-8W-uhe"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -220,7 +217,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbf-l5-GHi" userLabel="bottomView">
                                                         <rect key="frame" x="0.0" y="325" width="414" height="100"/>
                                                         <subviews>
-                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-JX-ivn" userLabel="forgot">
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="SA6-JX-ivn" userLabel="signuup">
                                                                 <rect key="frame" x="115" y="36.5" width="184" height="27"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fT5-nr-M9B">
@@ -302,12 +299,27 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomView" destination="Zbf-l5-GHi" id="z7O-ex-E8u"/>
+                        <outlet property="baseScrollView" destination="PKY-Rn-FaR" id="bjw-I3-0Bk"/>
+                        <outlet property="baseview" destination="zcE-k7-v1c" id="OdM-ng-eNt"/>
+                        <outlet property="bottomContainerView" destination="HwE-ui-56V" id="zfl-qE-yeE"/>
+                        <outlet property="bottomView" destination="Zbf-l5-GHi" id="RYe-Mh-zw4"/>
                         <outlet property="emailText" destination="ROp-f3-DiP" id="gES-77-cGO"/>
+                        <outlet property="facebookButton" destination="wLe-vj-EYk" id="5sk-5c-QnM"/>
+                        <outlet property="forgotPasswordBlueButton" destination="MED-Lv-kSG" id="VMn-eo-qXh"/>
+                        <outlet property="forgotPasswordButton" destination="MED-Lv-kSG" id="KxO-wu-sZR"/>
+                        <outlet property="forgotPasswordStackView" destination="gAn-AC-JPx" id="oQQ-R9-no2"/>
+                        <outlet property="forgotpasswordLabel" destination="cm2-z9-ROd" id="KqN-9l-Inc"/>
+                        <outlet property="inputStack" destination="sM2-5P-QjP" id="EkX-2p-PMX"/>
+                        <outlet property="instaLogo" destination="3SL-i8-5Dm" id="E6o-Bi-gwc"/>
                         <outlet property="leftView" destination="k0G-W3-V53" id="VXa-QK-tG4"/>
                         <outlet property="loginButton" destination="m6z-2O-YTE" id="cJf-j0-BUk"/>
+                        <outlet property="orView" destination="1bE-OJ-8Ap" id="6dg-h2-oYA"/>
                         <outlet property="passwordText" destination="KUx-no-cG2" id="PT3-4k-bRl"/>
                         <outlet property="rightView" destination="mML-Cw-Jqd" id="yli-DJ-Wdb"/>
+                        <outlet property="signupBlueButton" destination="F08-sj-RIz" id="swC-vZ-q9e"/>
+                        <outlet property="signupstack" destination="SA6-JX-ivn" id="4k2-Dw-Hgd"/>
+                        <outlet property="superView" destination="l9e-mo-RZS" id="3Rx-JO-aR8"/>
+                        <outlet property="topLangButton" destination="MuG-N5-vgR" id="Jx2-nr-E1M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xkY-6r-tcv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

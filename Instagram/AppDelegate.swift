@@ -12,7 +12,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         let loginViewController = UIStoryboard(name: "Main", bundle: .main).instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        loginViewController.uiController = LoginLightModeViewController()
+//        loginViewController.uiController = LoginLightModeViewController()
+        loginViewController.uiController = LoginDarkModeViewController()
         let Nav = UINavigationController.init(rootViewController: loginViewController)
         AppDelegate.shared().window?.rootViewController = Nav
         AppDelegate.shared().window?.makeKeyAndVisible()
