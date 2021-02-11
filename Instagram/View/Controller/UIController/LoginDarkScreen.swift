@@ -6,17 +6,9 @@
 import Foundation
 import UIKit
 
-class LoginDarkScreen: NSObject , LoginUIController {
-    var view: LoginScreen? = nil {
-        didSet{
-            guard let loginScreen = view else { return }
-            setUIColors(loginScreen: loginScreen)
-            didTextFieldTextChanged(textfield: loginScreen.emailTextFiel)
-            loginScreen.emailTextFiel.addTarget(self, action: #selector(didTextFieldTextChanged(textfield:)), for: .editingChanged)
-            loginScreen.passwordTextField.addTarget(self, action: #selector(didTextFieldTextChanged(textfield:)), for: .editingChanged)
-        }
-    }
-    @objc func didTextFieldTextChanged(textfield: UITextField){
+class LoginDarkScreen:  LoginLightScreen {
+    
+    @objc override func didTextFieldTextChanged(textfield: UITextField){
         guard let screen = view else { return }
         if screen.emailTextFiel.text?.isValidEmail() ?? false {
             if screen.passwordTextField.text?.count ?? 0 > 5{
@@ -31,7 +23,7 @@ class LoginDarkScreen: NSObject , LoginUIController {
         screen.loginBut.setTitleColor(.lightGray, for: .normal)
 
     }
-    func setUIColors(loginScreen: LoginScreen){
+    override func setUIColors(loginScreen: LoginScreen){
         loginScreen.loginBut.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         loginScreen.loginBut.setTitleColor(.lightGray, for: .normal)
         loginScreen.baseViewP.backgroundColor = .black
