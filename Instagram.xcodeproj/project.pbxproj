@@ -17,6 +17,7 @@
 		7064486225D3F124000C241E /* LoginLightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064486125D3F124000C241E /* LoginLightScreen.swift */; };
 		7064486B25D4080B000C241E /* LoginDarkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064486A25D4080B000C241E /* LoginDarkScreen.swift */; };
 		707FB9EC25D56C2C00BC06A8 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */; };
+		707FB9F325D5AC5B00BC06A8 /* InstaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FB9F225D5AC5B00BC06A8 /* InstaTextField.swift */; };
 		98B7763364C88FE2E5C21EC9 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BE9007055CDBE79E7698E /* Pods_Instagram.framework */; };
 		F717362025D3BEF3008A3EAE /* UIView+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717361F25D3BEF3008A3EAE /* UIView+Padding.swift */; };
 		F717362325D3BF3E008A3EAE /* UITextField+Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F717362225D3BF3E008A3EAE /* UITextField+Padding.swift */; };
@@ -43,6 +44,7 @@
 		7064486125D3F124000C241E /* LoginLightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLightScreen.swift; sourceTree = "<group>"; };
 		7064486A25D4080B000C241E /* LoginDarkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDarkScreen.swift; sourceTree = "<group>"; };
 		707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		707FB9F225D5AC5B00BC06A8 /* InstaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTextField.swift; sourceTree = "<group>"; };
 		F717361F25D3BEF3008A3EAE /* UIView+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Padding.swift"; sourceTree = "<group>"; };
 		F717362225D3BF3E008A3EAE /* UITextField+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Padding.swift"; sourceTree = "<group>"; };
 		F717362525D3C0DD008A3EAE /* LoginScreenInternal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenInternal.swift; sourceTree = "<group>"; };
@@ -125,7 +127,6 @@
 				F717361B25D3BDD5008A3EAE /* Controller */,
 				F717361A25D3BDC8008A3EAE /* ViewController */,
 				F717361925D3BDBE008A3EAE /* StoryBoards */,
-				707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +166,8 @@
 				F717362825D3C119008A3EAE /* LoginScreenExternal.swift */,
 				7064486125D3F124000C241E /* LoginLightScreen.swift */,
 				7064486A25D4080B000C241E /* LoginDarkScreen.swift */,
+				707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */,
+				707FB9F225D5AC5B00BC06A8 /* InstaTextField.swift */,
 			);
 			path = UIController;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				7064486B25D4080B000C241E /* LoginDarkScreen.swift in Sources */,
 				F717362625D3C0DD008A3EAE /* LoginScreenInternal.swift in Sources */,
 				F717362025D3BEF3008A3EAE /* UIView+Padding.swift in Sources */,
+				707FB9F325D5AC5B00BC06A8 /* InstaTextField.swift in Sources */,
 				7062019725CBFC1100ADE9C2 /* SignupViewController.swift in Sources */,
 				F717362325D3BF3E008A3EAE /* UITextField+Padding.swift in Sources */,
 				707FB9EC25D56C2C00BC06A8 /* PasswordTextField.swift in Sources */,

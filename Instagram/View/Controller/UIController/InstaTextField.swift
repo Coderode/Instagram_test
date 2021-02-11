@@ -13,31 +13,33 @@ class InstaTextField: UITextField {
         layer.cornerRadius = 5
         layer.borderWidth = 1
         layer.borderColor = UIColor.gray.cgColor
-        backgroundColor = .lightGray
-    }
-    override func layoutIfNeeded() {
-
-    }
-    override var text: String?{
-        didSet{
-            let gradient = getGradientLayer(bounds: self.bounds)
-            textColor = gradientColor(bounds: self.bounds, gradientLayer: gradient)
-        }
+        backgroundColor = #colorLiteral(red: 0.9803921569, green: 0.9803921569, blue: 0.9803921569, alpha: 1)
     }
     
+    /*
+    override var text: String?{
+        didSet{
+            let gradient = getGradientLayer(bounds: super.bounds)
+            textColor = gradientColor(bounds: super.bounds, gradientLayer: gradient)
+        }
+    }
+     */
+    
     override var placeholder: String?{
-        get { self.attributedPlaceholder?.string }
+        get {
+            self.attributedPlaceholder?.string
+            
+        }
         set{
             guard let value = newValue else {
                 self.attributedPlaceholder = nil
                 return
             }
-            self.attributedPlaceholder = NSAttributedString(string: value,
-                                                            attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+            self.attributedPlaceholder = NSAttributedString(string: value, attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
         }
     }
     
-    
+    /*
     func gradientColor(bounds: CGRect, gradientLayer :CAGradientLayer) -> UIColor? {
     //We are creating UIImage to get gradient color.
           UIGraphicsBeginImageContext(gradientLayer.bounds.size)
@@ -54,28 +56,10 @@ class InstaTextField: UITextField {
         gradient.endPoint = CGPoint(x: 1.0, y: 0.5)
         return gradient
     }
+ 
+ */
     
     
     
 }
-class PasswordTextField: UITextField{
-    override var isSecureTextEntry: Bool{
-        get{
-            super.isSecureTextEntry
-        }
-        set{
-            super.isSecureTextEntry = newValue
-            let image = newValue ? UIImage(named: "password_non_secure") : UIImage(named: "password_secure")
-            guard let rightToggleButton = self.rightView as? UIButton else { return }
-            rightToggleButton.setImage(image, for: .normal)
-        }
-    }
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        let rightButton = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        rightButton.addTarget(self, action: #selector(toggleSecureEntry), for: .touchUpInside)
-    }
-    @objc private func toggleSecureEntry(){
-        self.isSecureTextEntry.toggle()
-    }
-}
+

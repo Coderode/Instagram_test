@@ -13,17 +13,9 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var right: UIView!
     @IBOutlet weak var left: UIView!
     @IBOutlet weak var bottomView: UIView!
-    
     @IBOutlet weak var goToLoginLabel: UIButton!
-    
     @IBOutlet weak var goToLoginButton: UIButton!
-    
-    
     @IBOutlet weak var topLangButton: UIButton!
-    
-    
-    
-    
     /*
     @IBOutlet weak var emailText: UITextField!
     
@@ -35,13 +27,8 @@ class SignupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let arrow = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        let arrimage = UIImage(named: "down_arrow")
-        arrow.image = arrimage
-        topLangButton.setImage(arrow.image, for: .normal)
+        topLangButton.setImage( UIImage(named: "down_arrow"), for: .normal)
         topLangButton.imageToRight()
-        
         
         bottomView.addTopBorderWithColor(color: .gray, width: 1)
         left.addTopBorderWithColor(color: .gray, width: 1)

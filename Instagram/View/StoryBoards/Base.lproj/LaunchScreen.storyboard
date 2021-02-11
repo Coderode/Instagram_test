@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="instalogo" translatesAutoresizingMaskIntoConstraints="NO" id="tMI-xt-gL4">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="insta-outline-logo" translatesAutoresizingMaskIntoConstraints="NO" id="tMI-xt-gL4">
                                 <rect key="frame" x="165.5" y="406.5" width="83" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="tMI-xt-gL4" secondAttribute="height" multiplier="1:1" id="jwR-lH-Fln"/>
@@ -39,7 +39,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="instalogo" width="166.5" height="166"/>
+        <image name="insta-outline-logo" width="246.5" height="246.5"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

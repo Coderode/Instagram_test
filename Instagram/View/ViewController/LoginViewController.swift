@@ -97,30 +97,8 @@ class LoginViewController: UIViewController ,LoginScreen {
         emailText.setPadding()
         leftView.addTopBorderWithColor(color: .gray, width: 1)
         rightView.addTopBorderWithColor(color: .gray, width: 1)
-        
-        
-        let arrow = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
-        let arrimage = UIImage(named: "down_arrow")
-        arrow.image = arrimage
-        topLangButton.setImage(arrow.image, for: .normal)
+        topLangButton.setImage( UIImage(named: "down_arrow"), for: .normal)
         topLangButton.imageToRight()
-        
-        //forgotPasswordButton.addTarget(self, action: #selector(didTapOnLightMode), for: .touchUpInside)
-        //facebookButton.addTarget(self, action: #selector(didTapOnDarkMode), for: .touchUpInside)
-        
-        
-        passwordText.rightViewMode = UITextField.ViewMode.always
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        let image = UIImage(named: "password_secure")
-        imageView.image = image
-        imageView.isUserInteractionEnabled = true
-        passwordText.rightView = imageView
-        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(secureButtonTapped))
-        tapGestureRecognizer.numberOfTapsRequired = 1
-        tapGestureRecognizer.numberOfTouchesRequired = 1
-        
-        rightView.addGestureRecognizer(tapGestureRecognizer)
-        rightView.isUserInteractionEnabled = true
         
         //actions
         //login button target
@@ -134,7 +112,7 @@ class LoginViewController: UIViewController ,LoginScreen {
 
     }
     
-    
+    /*
     @objc func didTapOnDarkMode(){
         self.uiController = LoginDarkScreen()
         self.uiController.view = self
@@ -144,20 +122,7 @@ class LoginViewController: UIViewController ,LoginScreen {
         self.uiController.view = self
 
     }
-    
-    
-    
-    @objc func secureButtonTapped(){
-        print("secure tapped")
-        if passwordText.isSecureTextEntry {
-            passwordText.rightView = UIImageView(image: UIImage(named: "password_non_secure"))
-            passwordText.isSecureTextEntry = false
-        }else{
-            passwordText.rightView = UIImageView(image: UIImage(named: "password_secure"))
-            passwordText.isSecureTextEntry = true
-        }
-    }
-    
+     */
     
     @objc func userLogin(){
         guard let email = emailText.text else { return }
