@@ -16,6 +16,7 @@
 		7063302125D4FEBE00BF658F /* UIButton+image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7063302025D4FEBE00BF658F /* UIButton+image.swift */; };
 		7064486225D3F124000C241E /* LoginLightScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064486125D3F124000C241E /* LoginLightScreen.swift */; };
 		7064486B25D4080B000C241E /* LoginDarkScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7064486A25D4080B000C241E /* LoginDarkScreen.swift */; };
+		707C21B325D660560010A1C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 707C21B225D660560010A1C0 /* GoogleService-Info.plist */; };
 		707FB9EC25D56C2C00BC06A8 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */; };
 		707FB9F325D5AC5B00BC06A8 /* InstaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707FB9F225D5AC5B00BC06A8 /* InstaTextField.swift */; };
 		98B7763364C88FE2E5C21EC9 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269BE9007055CDBE79E7698E /* Pods_Instagram.framework */; };
@@ -43,6 +44,7 @@
 		7063302025D4FEBE00BF658F /* UIButton+image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+image.swift"; sourceTree = "<group>"; };
 		7064486125D3F124000C241E /* LoginLightScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLightScreen.swift; sourceTree = "<group>"; };
 		7064486A25D4080B000C241E /* LoginDarkScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDarkScreen.swift; sourceTree = "<group>"; };
+		707C21B225D660560010A1C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		707FB9EB25D56C2C00BC06A8 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		707FB9F225D5AC5B00BC06A8 /* InstaTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTextField.swift; sourceTree = "<group>"; };
 		F717361F25D3BEF3008A3EAE /* UIView+Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Padding.swift"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		7062017725CBC95700ADE9C2 /* Instagram */ = {
 			isa = PBXGroup;
 			children = (
+				707C21B225D660560010A1C0 /* GoogleService-Info.plist */,
 				F717361E25D3BEDF008A3EAE /* Extention */,
 				F717361825D3BDB7008A3EAE /* View */,
 				F717361725D3BDAB008A3EAE /* Model */,
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7062018525CBC95900ADE9C2 /* LaunchScreen.storyboard in Resources */,
+				707C21B325D660560010A1C0 /* GoogleService-Info.plist in Resources */,
 				F72D571E25D3B931008520F3 /* Assets.xcassets in Resources */,
 				7062018025CBC95700ADE9C2 /* Main.storyboard in Resources */,
 			);
@@ -468,14 +472,14 @@
 				CODE_SIGN_ENTITLEMENTS = Instagram/Instagram.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3F2YQ9FSH8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hcl.music;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandeep.InstagramTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
@@ -492,14 +496,14 @@
 				CODE_SIGN_ENTITLEMENTS = Instagram/Instagram.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3F2YQ9FSH8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Instagram/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hcl.music;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sandeep.InstagramTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
