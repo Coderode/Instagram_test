@@ -55,6 +55,9 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWb-tn-7Dd" userLabel="left">
                                                         <rect key="frame" x="32" y="10" width="145" height="0.0"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="7fB-VG-76k"/>
+                                                        </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E9m-1A-fB9">
                                                         <rect key="frame" x="197" y="0.0" width="20" height="20"/>
@@ -68,6 +71,9 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6L-sm-xPA" userLabel="right">
                                                         <rect key="frame" x="237" y="10" width="145" height="0.0"/>
                                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" id="600-hv-jzh"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,7 +225,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sM2-5P-QjP">
                                                 <rect key="frame" x="32" y="230" width="350" height="181"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number, email address or username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-f3-DiP" userLabel="emailText" customClass="InstaTextField" customModule="Instagram" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone number, email address or username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ROp-f3-DiP" userLabel="emailText">
                                                         <rect key="frame" x="0.0" y="0.0" width="350" height="45"/>
                                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,7 +240,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-no-cG2" userLabel="passwordText" customClass="PasswordTextField" customModule="Instagram" customModuleProvider="target">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-no-cG2" userLabel="passwordText">
                                                         <rect key="frame" x="0.0" y="65" width="350" height="45"/>
                                                         <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,14 +315,14 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="2f3-Mb-RXk" firstAttribute="centerX" secondItem="1bE-OJ-8Ap" secondAttribute="centerX" id="6ex-fL-v8Z"/>
+                                                    <constraint firstItem="k0G-W3-V53" firstAttribute="top" secondItem="mML-Cw-Jqd" secondAttribute="top" id="EAO-RJ-zjj"/>
                                                     <constraint firstItem="k0G-W3-V53" firstAttribute="leading" secondItem="1bE-OJ-8Ap" secondAttribute="leading" constant="32" id="Gbn-44-tRZ"/>
                                                     <constraint firstItem="mML-Cw-Jqd" firstAttribute="width" secondItem="1bE-OJ-8Ap" secondAttribute="width" multiplier="0.35" id="McJ-UZ-rmw"/>
-                                                    <constraint firstItem="mML-Cw-Jqd" firstAttribute="bottom" secondItem="1bE-OJ-8Ap" secondAttribute="bottomMargin" id="NCa-is-pIh"/>
-                                                    <constraint firstItem="mML-Cw-Jqd" firstAttribute="top" secondItem="1bE-OJ-8Ap" secondAttribute="top" constant="10" id="R58-v6-rA0"/>
                                                     <constraint firstAttribute="bottom" secondItem="2f3-Mb-RXk" secondAttribute="bottom" id="Uja-ii-EF4"/>
-                                                    <constraint firstItem="mML-Cw-Jqd" firstAttribute="top" secondItem="k0G-W3-V53" secondAttribute="top" id="VWZ-Yx-VZG"/>
-                                                    <constraint firstItem="mML-Cw-Jqd" firstAttribute="bottom" secondItem="k0G-W3-V53" secondAttribute="bottom" id="ZGu-b3-kNg"/>
                                                     <constraint firstItem="k0G-W3-V53" firstAttribute="width" secondItem="1bE-OJ-8Ap" secondAttribute="width" multiplier="0.35" id="Ztp-1E-Bv5"/>
+                                                    <constraint firstItem="mML-Cw-Jqd" firstAttribute="centerY" secondItem="1bE-OJ-8Ap" secondAttribute="centerY" id="asp-oT-JQT"/>
+                                                    <constraint firstItem="k0G-W3-V53" firstAttribute="centerY" secondItem="1bE-OJ-8Ap" secondAttribute="centerY" id="bp4-pJ-A6K"/>
+                                                    <constraint firstItem="k0G-W3-V53" firstAttribute="top" secondItem="1bE-OJ-8Ap" secondAttribute="top" constant="10" id="mR4-f8-0wO"/>
                                                     <constraint firstAttribute="trailing" secondItem="mML-Cw-Jqd" secondAttribute="trailing" constant="32" id="tek-vs-Ew6"/>
                                                     <constraint firstItem="2f3-Mb-RXk" firstAttribute="top" secondItem="1bE-OJ-8Ap" secondAttribute="top" id="tpg-Xk-DUX"/>
                                                 </constraints>
