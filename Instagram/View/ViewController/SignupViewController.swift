@@ -16,6 +16,9 @@ class SignupViewController: UIViewController {
     @IBOutlet weak var goToLoginLabel: UIButton!
     @IBOutlet weak var goToLoginButton: UIButton!
     @IBOutlet weak var topLangButton: UIButton!
+    
+    
+    @IBOutlet weak var signupPhoneEmail: UIButton!
     /*
     @IBOutlet weak var emailText: UITextField!
     
@@ -36,6 +39,7 @@ class SignupViewController: UIViewController {
         
         goToLoginButton.addTarget(self, action: #selector(loginButtonTapped), for:.touchUpInside)
         goToLoginLabel.addTarget(self, action: #selector(loginButtonTapped), for:.touchUpInside)
+        signupPhoneEmail.addTarget(self, action: #selector(signupWithPhoneEmailTapped), for: .touchUpInside)
     }
     
     
@@ -71,6 +75,14 @@ class SignupViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
+    
+    @objc func signupWithPhoneEmailTapped(){
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SignupEmailPhoneController") as! SignupEmailPhoneController
+        nextViewController.modalPresentationStyle = .fullScreen
+        self.present(nextViewController, animated:true, completion:nil)
+    }
     
 
 }
